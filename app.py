@@ -3,7 +3,7 @@ import pandas as pd
 #import seaborn as sns
 #import matplotlib.pyplot as plt
 # Deployment purposes
-from custom_transformer import column_transformer
+#from custom_transformer import column_transformer
 import tensorflow as tf
 import numpy as np
 from PIL import Image
