@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 # Deployment purposes
 from custom_transformer import column_transformer
 import tensorflow as tf
@@ -127,13 +127,13 @@ def model_screen():
         st.info('In Notebook The result of model inference is, image most likely belongs to axe throwing with a 100 percent confidence.')                 
         st.info('For the inference model itself which previously got a confidence percentage prediction score of 99.99% this is very good then after fine tuning the score rises to 100% this is a very perfect score.')
 
-def validation(matrix):
-    fig, ax = plt.subplots()
-    sns.heatmap(matrix, annot=True, cmap="YlGnBu", fmt='g', ax=ax)
-    ax.set_xlabel('PREDICTED')
-    ax.set_ylabel('ACTUAL')
-    ax.set_title('Confusion Matrix')
-    st.write(fig)
+# def validation(matrix):
+#     fig, ax = plt.subplots()
+#     sns.heatmap(matrix, annot=True, cmap="YlGnBu", fmt='g', ax=ax)
+#     ax.set_xlabel('PREDICTED')
+#     ax.set_ylabel('ACTUAL')
+#     ax.set_title('Confusion Matrix')
+#     st.write(fig)
 
 def model_predict():
     st.image("predict.png",use_column_width=True)
